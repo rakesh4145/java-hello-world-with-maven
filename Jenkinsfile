@@ -1,18 +1,6 @@
 pipeline{
-    agent any
-    agent { label 'main' }
     
 
-    tools {
-        maven '3.8.5'
-    }
-    // ... stages ...///
-}
-
-    tools {
-         maven 'maven'
-         jdk 'java'
-    }
 stages{
         stage('checkout'){
             steps{
@@ -27,4 +15,4 @@ stages{
         }
     }
 }
-
+}
