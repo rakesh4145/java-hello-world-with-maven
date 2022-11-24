@@ -7,11 +7,11 @@ pipeline {
                 git branch:'master',url:'https://github.com/rakesh4145/java-hello-world-with-maven.git'
             }
         }
-    }
     stage('unit testing'){
             steps{
                 sh 'mvn test'
             }
         }
     }
+}  
 
